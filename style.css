@@ -97,7 +97,7 @@ main {
   background-color: var(--clr-neutral-white);
   border-radius: 1.5rem;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.26);
-  max-width: 50%;
+  max-width: 42rem;
 }
 
 .card-component section {
@@ -224,4 +224,21 @@ main {
 .item-4 {
   background-color: hsla(234, 85%, 45%, 0.082);
   color: var(--clr-primary-blue);
+}
+
+@media (max-width: 680px) {
+  main {
+    background-color: black;
+  }
+  .card-component {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+  }
+  .results {
+    border-radius: 0 0 1.8rem 1.8rem;
+  }
+  .card-component section {
+    width: 100%;
+  }
 }
